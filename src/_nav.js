@@ -16,6 +16,7 @@ import {
 import { CNavGroup, CNavItem, CNavTitle } from '@coreui/react'
 
 const _nav = [
+  //////aca se agrega el menu principal
   {
     component: CNavItem,
     name: 'Menu Principal',
@@ -30,24 +31,7 @@ const _nav = [
     component: CNavTitle,
     name: 'Gestion de Documentos',
   },
-  {
-    component: CNavGroup,
-    name: 'Procedimientos',
-    to: '/base',
-    icon: <CIcon icon={cilPuzzle} customClassName="nav-icon" />,
-    items: [
-      {
-        component: CNavItem,
-        name: 'Lista de Procedimientos',
-        to: '/base/accordion',
-      },
-      {
-        component: CNavItem,
-        name: 'Registro de Procedimiento',
-        to: '/base/accordion',
-      },
-    ],
-  },
+  /////aca se agrega el componente PROCESOS
   {
     component: CNavGroup,
     name: 'Procesos',
@@ -67,6 +51,26 @@ const _nav = [
   
     ],
   },
+  /////aca se agrega el componente PROCEDIMIENTOS
+  {
+    component: CNavGroup,
+    name: 'Procedimientos',
+    to: '/base',
+    icon: <CIcon icon={cilPuzzle} customClassName="nav-icon" />,
+    items: [
+      {
+        component: CNavItem,
+        name: 'Lista de Procedimientos',
+        to: '/base/accordion',
+      },
+      {
+        component: CNavItem,
+        name: 'Registro de Procedimiento',
+        to: '/base/accordion',
+      },
+    ],
+  },
+  /////aca se agrega el componente RESPONSABLES
   {
     component: CNavGroup,
     name: 'Responsables',
@@ -85,6 +89,7 @@ const _nav = [
       },
     ],
   },
+  /////aca se agrega el componente DOCUMENTOS
   {
     component: CNavGroup,
     name: 'Documentos',
@@ -99,6 +104,45 @@ const _nav = [
       {
         component: CNavItem,
         name: 'Registro de Documento',
+        to: '/base/accordion',
+      },
+    ],
+  },
+  /////aca se agrega el componente AREAS
+  {
+    component: CNavGroup,
+    name: 'Areas',
+    to: '/base',
+    icon: <CIcon icon={cilPuzzle} customClassName="nav-icon" />,
+    items: [
+      {
+        component: CNavItem,
+        name: 'Lista de Areas',
+        to: '/base/accordion',
+      },
+      {
+        component: CNavItem,
+        name: 'Registro de Areas',
+        to: '/base/accordion',
+      },
+    ],
+  },
+  
+  /////aca se agrega el componente UNIDADES
+  {
+    component: CNavGroup,
+    name: 'Unidades',
+    to: '/base',
+    icon: <CIcon icon={cilPuzzle} customClassName="nav-icon" />,
+    items: [
+      {
+        component: CNavItem,
+        name: 'Lista de Unidades',
+        to: '/base/accordion',
+      },
+      {
+        component: CNavItem,
+        name: 'Registro de Unidades',
         to: '/base/accordion',
       },
     ],

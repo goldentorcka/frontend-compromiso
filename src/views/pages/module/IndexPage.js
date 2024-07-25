@@ -1,7 +1,9 @@
-import 'style.css';
 
-export const IndexPage = () => {
+const IndexPage = () => {
   return (
     <div>IndexPage</div>
   )
 }
+
+
+export default IndexPage;
